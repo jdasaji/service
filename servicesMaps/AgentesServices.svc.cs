@@ -27,7 +27,7 @@ namespace servicesMaps
         [OperationContract]
         [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json)]
         public List<Agentes> listarAgentes()
-        {
+        { 
             
             //  return new cNAgentes().listarAgentes();
             var path = HttpContext.Current.Request.PhysicalApplicationPath;
