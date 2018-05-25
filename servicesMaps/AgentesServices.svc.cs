@@ -32,7 +32,7 @@ namespace servicesMaps
             //  return new cNAgentes().listarAgentes();
             var path = HttpContext.Current.Request.PhysicalApplicationPath;
             using (var streamReader = new StreamReader(path + "agentes.txt"))
-            {
+            { 
                 var content = streamReader.ReadToEnd();
                 var objAgentes = JsonConvert.DeserializeObject<List<Agentes>>(content);
                 return objAgentes;
